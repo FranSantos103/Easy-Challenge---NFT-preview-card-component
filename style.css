@@ -1,0 +1,170 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Outfit', Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:#0d1a2d;
+    overflow: hidden;
+}
+
+main{
+    width: 310px;
+    max-width: 85vw;
+    height: auto;
+    background-color: #15273f;
+    border-top: 15px solid #0b1729;
+    border-left: 15px solid #0b1729;
+    border-right: 15px solid #0b1729;
+    border-bottom: 15px solid #0b1729;
+    border-radius: 20px;
+    overflow: hidden; 
+    padding-bottom: 30px;
+    box-shadow: 0px 10px 0px #0b1729;
+}
+
+.cardImage{
+    width: 260px;
+    max-width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.cardImage:hover{
+   cursor: pointer;
+}
+
+.imageContainer {
+  position: relative; 
+  border-radius: 10px; 
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 6%;
+  left: 5%;
+  width: 260px;
+  max-width: 90%;
+  height: 94%;
+  border-radius: 10px;
+  background-color: rgba(0, 255, 247, 0.5); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; 
+  transition: opacity 0.2s ease;
+}
+
+.viewIcon {
+  width: 40px;
+  height: 40px;
+}
+
+.imageContainer:hover .overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+
+h1{
+    font-size: 1rem;
+    margin-left: 20px;
+    color: white;
+    margin-top: 20px;
+    transition: color 0.2s ease;
+}
+
+h1:hover{
+    cursor: pointer;
+    color:#17c9ce;
+}
+
+.card-description{
+    font-size: 0.9rem;
+    margin-left: 20px;
+    margin-top: 10px;
+    line-height: 20px;
+    color:#3d5575;
+}
+
+.card-details{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    border-bottom: 1px solid #3d5575;
+    width: 85%;
+    margin-left: 18px;
+    padding-bottom: 20px;
+}
+
+.priceBox,
+.timeBox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.price{
+    display: inline-block;
+    color: #00FFF8;
+}
+
+.timeLeft{
+    display: inline-block;
+    color:#3d5575;
+}
+
+.creator{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.imageOfJulesWyvern{
+    width: 10%;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+
+.nameOfCreator{
+    margin-left: 15px;
+    color:#3d5575;
+    font-size: 1em;
+}
+
+span{
+    color: rgb(207, 206, 206);
+}
+
+span:hover{
+    cursor: pointer;
+    color:#17c9ce;
+}
+
+@media (max-width: 340px) {
+.creator {
+   flex-wrap: wrap;
+   margin-top: 14px;
+  }
+
+.imageOfJulesWyvern {
+    width: 20px;
+    height: auto;
+    margin-left: 15px;
+  }
+
+.nameOfCreator {
+    font-size: 0.8rem;
+  }
+}
